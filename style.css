@@ -134,27 +134,58 @@ svg {
 
 header {
   background-color: rgb(20, 130, 199);
-  padding: 3rem 20rem;
-  min-height: 600px;
-  transform: translateY(-400px) skewY(-8deg);
+  min-height: 670px;
+  transform: translateY(-250px) skewY(-8deg);
 }
 
 .header-info {
   background-color: white;
   display: flex;
+  margin: 0 auto;
+  max-width: 1050px;
   gap: 5rem;
-  transform: translateY(400px) skewY(8deg);
-  box-shadow: 5px 5px 15px black;
+  transform: translateY(350px) skewY(8deg);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.65);
 }
 
 .about-info-container {
-  width: 35%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.about-title {
+  margin-top: 2rem;
+  font-size: 30px;
+  align-self: flex-start;
+}
+
+.about-info {
+  align-self: flex-start;
+  margin-right: 1rem;
+}
+
+.about-buttons-container {
+  display: flex;
+  gap: 1rem;
+  align-self: flex-end;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.about-button {
+  border: none;
+  background-color: white;
+  padding: 0;
+  cursor: pointer;
+  font-size: 30px;
 }
 
 .header-image {
-  width: 65%;
-  transform: scale(1.3);
-  box-shadow: -5px 5px 15px black;
+  width: 40%;
+  transform: scale(1.25);
+  box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.65);
 }
 
 .header-image {
