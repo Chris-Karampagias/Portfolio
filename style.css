@@ -126,8 +126,18 @@ body {
   position: relative;
 }
 
-svg {
-  height: 20px;
+button:hover {
+  transform: scale(1.1);
+}
+
+.about-button,
+.project-btn {
+  transition: transform 0.2s ease-in-out;
+}
+
+.about-title,
+.main-title {
+  font-family: "Montserrat";
 }
 
 /* Header */
@@ -190,4 +200,73 @@ header {
 
 .header-image {
   max-width: 400px;
+}
+
+/* Main */
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.main-title {
+  font-size: 30px;
+  margin: 20px auto;
+  padding-bottom: 2px;
+  border-bottom: 1px solid rgba(183, 183, 183, 0.652);
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 50px;
+  row-gap: 60px;
+  column-gap: 30px;
+}
+
+.project {
+  max-width: 400px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.65);
+  margin: 0 auto;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5px;
+  margin-bottom: 10px;
+}
+
+.project-buttons {
+  margin-top: 10px;
+  display: flex;
+}
+
+.project-btn {
+  font-size: 30px;
+  background-color: white;
+  border: none;
+  margin-right: 10px;
+  padding: 0;
+  display: flex;
+  place-items: center;
+  cursor: pointer;
+}
+
+svg {
+  height: 30px;
+}
+
+.project-title {
+  font-size: 20px;
+}
+
+.project-image {
+  width: 100%;
+}
+
+.project-description {
+  padding: 10px;
 }
