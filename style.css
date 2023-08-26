@@ -131,7 +131,8 @@ button:hover {
 }
 
 .about-button,
-.project-btn {
+.project-btn,
+.footer-btn {
   transition: transform 0.2s ease-in-out;
 }
 
@@ -255,7 +256,7 @@ main {
   cursor: pointer;
 }
 
-svg {
+.project svg {
   height: 30px;
 }
 
@@ -269,4 +270,68 @@ svg {
 
 .project-description {
   padding: 10px;
+}
+
+/* Footer */
+
+footer {
+  min-height: 400px;
+  background-color: rgb(20, 130, 199);
+  margin-top: 200px;
+  padding-top: 20px;
+}
+
+.footer-flex-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.footer-image {
+  width: 50%;
+}
+
+.contact-me {
+  font-size: 30px;
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+.contact-options-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.footer-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 50px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.mail-container {
+  display: flex;
+  place-items: center;
+  gap: 8px;
+}
+
+.mail-container svg {
+  height: 60px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 20px;
+  transition: border 0.2s ease-in-out;
+}
+
+a:hover {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.329);
 }
