@@ -301,7 +301,7 @@ footer {
 .footer-flex-container {
   display: flex;
   justify-content: center;
-  gap: 25px;
+  gap: 15px;
   max-width: 1050px;
   margin: 0 auto;
 }
@@ -315,14 +315,19 @@ footer {
   font-family: "Montserrat";
   text-align: center;
   color: white;
+  width: 50%;
+  white-space: nowrap;
+  margin-left: 40px;
 }
 
 .contact-options-container {
   margin-top: 20px;
+  margin-left: 40px;
   display: flex;
   flex-direction: column;
   gap: 20px;
   align-items: center;
+  width: 50%;
 }
 
 .footer-btn {
@@ -334,6 +339,7 @@ footer {
 }
 
 .mail-container {
+  margin-left: 50px;
   display: flex;
   place-items: center;
   gap: 8px;
@@ -359,6 +365,7 @@ a:hover {
 /* Tablet & small laptop screen */
 
 @media (max-width: 1062px) {
+  /* Header */
   .header-info {
     transform: translateY(400px) skewY(8deg);
     min-width: 466px;
@@ -396,6 +403,27 @@ a:hover {
 
   .about-buttons-container {
     display: none;
+  }
+
+  /* Footer */
+
+  .footer-image {
+    width: 250px;
+    transform: translateY(5px);
+  }
+
+  .contact-options-container {
+    width: 150px;
+    margin-right: 50px;
+  }
+
+  .mail-container {
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  .footer-flex-container {
+    gap: 50px;
   }
 }
 >>>>>>> 9c9a1d9 (Create tablet media query for header)
