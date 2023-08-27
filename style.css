@@ -215,6 +215,7 @@ header {
   transform: translateX(-50%);
   color: white;
   font-size: 20px;
+  font-weight: bold;
   font-family: "Montserrat";
 }
 
@@ -426,4 +427,72 @@ a:hover {
     gap: 50px;
   }
 }
+<<<<<<< HEAD
 >>>>>>> 9c9a1d9 (Create tablet media query for header)
+=======
+
+/* Mobile */
+
+@media (max-width: 610px) {
+  /* Header */
+
+  body {
+    width: fit-content;
+  }
+
+  .about-title,
+  .about-info {
+    align-self: center;
+  }
+
+  .about-title {
+    margin: 1.5rem 1rem 0;
+  }
+
+  .about-info-container {
+    gap: 10px;
+  }
+
+  .about-buttons-container {
+    align-self: center;
+    margin-right: 0;
+  }
+
+  .github-btn {
+    margin-right: 10px;
+  }
+
+  .header-info {
+    transform: translateY(500px) skewY(8deg);
+    min-width: 10px;
+    margin: 0 120px;
+  }
+
+  .image-name-container {
+    right: 50%;
+    transform: translate(50%, -100%) scale(1.1);
+  }
+
+  .my-name {
+    transform: translate(-50%, 0);
+    left: 50%;
+    bottom: 0;
+    top: 90%;
+  }
+
+  .about-buttons-container {
+    display: block;
+  }
+
+  /* Main */
+
+  main {
+    margin-top: 50px;
+  }
+
+  .projects-container {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+}
+>>>>>>> 07ce42a (Create mobile media query for header)
