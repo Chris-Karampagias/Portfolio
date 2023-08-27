@@ -151,6 +151,7 @@ header {
 
 .header-info {
   background-color: white;
+  position: relative;
   display: flex;
   margin: 0 auto;
   max-width: 1050px;
@@ -205,6 +206,7 @@ header {
   max-width: 400px;
   margin-left: 75px;
   transform: scale(1.3) translateX(-15px);
+  box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.65);
 }
 
 .my-name {
@@ -284,3 +286,116 @@ main {
 .project-description {
   padding: 10px;
 }
+<<<<<<< HEAD
+=======
+
+/* Footer */
+
+footer {
+  min-height: 400px;
+  background-color: rgb(20, 130, 199);
+  margin-top: 200px;
+  padding-top: 20px;
+}
+
+.footer-flex-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.footer-image {
+  width: 50%;
+}
+
+.contact-me {
+  font-size: 30px;
+  font-family: "Montserrat";
+  text-align: center;
+  color: white;
+}
+
+.contact-options-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.footer-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 50px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.mail-container {
+  display: flex;
+  place-items: center;
+  gap: 8px;
+}
+
+.mail-container svg {
+  height: 60px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  transition: border 0.2s ease-in-out;
+}
+
+a:hover {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.329);
+}
+
+/* Media Queries */
+
+/* Tablet & small laptop screen */
+
+@media (max-width: 1062px) {
+  .header-info {
+    transform: translateY(400px) skewY(8deg);
+    min-width: 466px;
+    margin: 0 100px;
+  }
+
+  .about-info-container {
+    width: 100%;
+  }
+
+  .my-name {
+    white-space: nowrap;
+    top: 0;
+    left: 0;
+    transform: translate(calc(-10px - 100%), 90px);
+  }
+
+  .about-info {
+    margin: 0.5rem 1rem 1rem;
+  }
+
+  .about-title {
+    margin: 1rem 1rem 0;
+  }
+
+  .image-name-container {
+    position: absolute;
+    margin-left: 0;
+    right: 0;
+    top: 0;
+    height: 200px;
+    transform: scale(1) translate(40px, -60%);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.65);
+  }
+
+  .about-buttons-container {
+    display: none;
+  }
+}
+>>>>>>> 9c9a1d9 (Create tablet media query for header)
