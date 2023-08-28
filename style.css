@@ -130,6 +130,11 @@ button:hover {
   transform: scale(1.1);
 }
 
+a {
+  color: transparent;
+  text-decoration: none;
+}
+
 .about-button,
 .project-btn,
 .footer-btn {
@@ -348,14 +353,14 @@ footer {
   height: 60px;
 }
 
-a {
+.mail-container a {
   color: white;
   text-decoration: none;
   font-size: 20px;
   transition: border 0.2s ease-in-out;
 }
 
-a:hover {
+.mail-container a:hover {
   border-bottom: 1px solid rgba(255, 255, 255, 0.329);
 }
 
