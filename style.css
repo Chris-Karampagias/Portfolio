@@ -287,8 +287,6 @@ main {
 .project-description {
   padding: 10px;
 }
-<<<<<<< HEAD
-=======
 
 /* Footer */
 
@@ -427,9 +425,6 @@ a:hover {
     gap: 50px;
   }
 }
-<<<<<<< HEAD
->>>>>>> 9c9a1d9 (Create tablet media query for header)
-=======
 
 /* Mobile */
 
@@ -494,5 +489,8 @@ a:hover {
     grid-template-columns: 1fr;
     padding: 0;
   }
+
+  .project-buttons {
+    gap: 20px;
+  }
 }
->>>>>>> 07ce42a (Create mobile media query for header)
