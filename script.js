@@ -1,6 +1,5 @@
 function reveal() {
   let projects = document.querySelectorAll(".project");
-  let footer = document.querySelector("footer");
   let windowHeight = window.innerHeight;
   let projectVisible = windowHeight * 0.5;
   for (let i = 0; i < projects.length; i += 2) {
