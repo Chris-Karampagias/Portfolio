@@ -110,6 +110,7 @@ ul {
 }
 /* End of reset */
 
+/* Fonts */
 @font-face {
   font-family: "Montserrat";
   src: url(./fonts/Montserrat-VariableFont_wght.ttf);
@@ -126,6 +127,7 @@ body {
   position: relative;
 }
 
+/* General */
 button:hover {
   transform: scale(1.1);
 }
@@ -146,6 +148,16 @@ a {
   font-family: "Montserrat";
 }
 
+.project.reveal-right-rotate-counter-clockwise {
+  transform: translateX(0) rotate(-360deg);
+  opacity: 1;
+}
+
+.project.reveal-right-rotate-clockwise {
+  transform: translate(0) rotate(360deg);
+  opacity: 1;
+}
+
 /* Header */
 
 header {
@@ -161,8 +173,22 @@ header {
   margin: 0 auto;
   max-width: 1050px;
   gap: 5rem;
+  opacity: 0;
   transform: translateY(350px) skewY(8deg);
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.65);
+  animation: 2s reveal-header 1 0.7s ease-in-out forwards;
+}
+
+@keyframes reveal-header {
+  from {
+    opacity: 0;
+    transform: translateX(-1000px) translateY(350px) skewY(8deg);
+  }
+
+  to {
+    transform: translateX(0) translateY(350px) skewY(8deg);
+    opacity: 1;
+  }
 }
 
 .about-info-container {
@@ -251,6 +277,9 @@ main {
   max-width: 400px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.65);
   margin: 0 auto;
+  transform: translateX(1000px);
+  opacity: 0;
+  transition: all 2s ease-in-out;
 }
 
 .project-header {
@@ -300,6 +329,7 @@ footer {
   background-color: rgb(20, 130, 199);
   margin-top: 200px;
   padding-top: 20px;
+  transition: all 2s ease-in-out;
 }
 
 .footer-flex-container {
@@ -374,6 +404,18 @@ footer {
     transform: translateY(400px) skewY(8deg);
     min-width: 466px;
     margin: 0 100px;
+  }
+
+  @keyframes reveal-header {
+    from {
+      opacity: 0;
+      transform: translateX(-1000px) translateY(400px) skewY(8deg);
+    }
+
+    to {
+      transform: translateX(0) translateY(400px) skewY(8deg);
+      opacity: 1;
+    }
   }
 
   .about-info-container {
@@ -466,6 +508,18 @@ footer {
     transform: translateY(500px) skewY(8deg);
     min-width: 260px;
     margin: 0 120px;
+  }
+
+  @keyframes reveal-header {
+    from {
+      opacity: 0;
+      transform: translateX(-1000px) translateY(500px) skewY(8deg);
+    }
+
+    to {
+      transform: translateX(0) translateY(500px) skewY(8deg);
+      opacity: 1;
+    }
   }
 
   .image-name-container {
