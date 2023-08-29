@@ -135,6 +135,7 @@ button:hover {
 a {
   color: transparent;
   text-decoration: none;
+  font-family: "OpenSans";
 }
 
 .about-button,
@@ -164,6 +165,11 @@ header {
   background-color: rgb(20, 130, 199);
   min-height: 670px;
   transform: translateY(-250px) skewY(-8deg);
+}
+
+.hi {
+  font-weight: bold;
+  font-size: 30px;
 }
 
 .header-info {
@@ -205,8 +211,10 @@ header {
 }
 
 .about-info {
+  font-family: "OpenSans";
   align-self: flex-start;
   margin-right: 1rem;
+  font-size: 20px;
 }
 
 .about-buttons-container {
@@ -321,7 +329,8 @@ main {
 }
 
 .project-description {
-  font-size: 15px;
+  font-family: "OpenSans";
+  font-size: 20px;
   padding: 20px;
 }
 
