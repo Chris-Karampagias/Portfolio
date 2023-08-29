@@ -121,10 +121,15 @@ ul {
   src: url(./fonts/OpenSans-VariableFont_wdth\wght.ttf);
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "OpenSans", system-ui, "Segoe UI", Roboto, Helvetica, Arial,
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   position: relative;
+  overflow-x: hidden;
 }
 
 /* General */
