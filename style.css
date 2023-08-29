@@ -275,6 +275,7 @@ main {
 
 .project {
   max-width: 400px;
+  height: 345px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.65);
   margin: 0 auto;
   transform: translateX(1000px);
@@ -316,10 +317,12 @@ main {
 
 .project-image {
   width: 100%;
+  object-fit: contain;
 }
 
 .project-description {
-  padding: 10px;
+  font-size: 15px;
+  padding: 20px;
 }
 
 /* Footer */
