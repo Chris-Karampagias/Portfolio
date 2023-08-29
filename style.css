@@ -266,6 +266,27 @@ main {
   gap: 20px;
 }
 
+.technologies-container {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 50px 0;
+}
+
+@media (max-width: 696px) {
+  .technologies-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    row-gap: 20px;
+  }
+}
+
+.technologies-container i {
+  font-size: 60px;
+}
+
 .main-title {
   font-size: 30px;
   margin: 20px auto;
