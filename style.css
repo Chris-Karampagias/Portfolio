@@ -465,7 +465,6 @@ footer {
   /* Header */
   .header-info {
     transform: translateY(400px) skewY(8deg);
-    min-width: 466px;
     margin: 0 100px;
   }
 
@@ -549,11 +548,6 @@ footer {
 
 @media (max-width: 610px) {
   /* Header */
-
-  body {
-    width: fit-content;
-  }
-
   .about-title,
   .about-info {
     align-self: center;
@@ -578,8 +572,7 @@ footer {
 
   .header-info {
     transform: translateY(500px) skewY(8deg);
-    min-width: 260px;
-    margin: 0 120px;
+    margin: 0 50px;
   }
 
   @keyframes reveal-header {
