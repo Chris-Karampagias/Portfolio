@@ -327,7 +327,6 @@ main {
 
 .project {
   max-width: 400px;
-  height: 345px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.65);
   margin: 0 auto;
   transform: translateX(1000px);
@@ -360,7 +359,7 @@ main {
 }
 
 .project svg {
-  height: 30px;
+  min-height: 30px;
 }
 
 .project-title {
@@ -368,7 +367,7 @@ main {
 }
 
 .project-image {
-  width: 100%;
+  max-width: 100%;
   object-fit: contain;
 }
 
@@ -436,14 +435,14 @@ footer {
 }
 
 .mail-container {
-  margin-left: 50px;
   display: flex;
   place-items: center;
+  flex-direction: column;
   gap: 8px;
 }
 
 .mail-container svg {
-  height: 60px;
+  height: 63px;
 }
 
 .mail-container a {
@@ -465,7 +464,8 @@ footer {
   /* Header */
   .header-info {
     transform: translateY(400px) skewY(8deg);
-    margin: 0 100px;
+    max-width: 610px;
+    /*  margin: 0 auto; */
   }
 
   @keyframes reveal-header {
@@ -516,7 +516,7 @@ footer {
   /* Footer */
 
   .footer-image {
-    width: 300px;
+    max-width: 300px;
     transform: translateY(5px);
   }
 
@@ -525,13 +525,8 @@ footer {
     padding-left: 10px;
   }
 
-  .mail-container {
-    flex-direction: column;
-    margin-left: 0;
-  }
-
   .footer-flex-container {
-    gap: 60px;
+    justify-content: space-evenly;
   }
 }
 
@@ -546,7 +541,7 @@ footer {
   }
 }
 
-@media (max-width: 610px) {
+@media (max-width: 692px) {
   /* Header */
   .about-title,
   .about-info {
@@ -611,11 +606,10 @@ footer {
 
   .projects-container {
     grid-template-columns: 1fr;
-    padding: 0;
   }
 
   .project-buttons {
-    gap: 20px;
+    gap: 10px;
   }
 
   /* Footer */
@@ -639,5 +633,11 @@ footer {
   .footer-image {
     transform: translate(0);
     width: 100%;
+  }
+}
+
+@media (max-width: 350px) {
+  main {
+    margin-top: 250px;
   }
 }
